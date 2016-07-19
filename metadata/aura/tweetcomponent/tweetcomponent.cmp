@@ -1,0 +1,40 @@
+<aura:component >
+	<aura:attribute name="tweet" type="Object" />
+	<aura:attribute name="body" type="Object[]" />
+	<aura:attribute name="timesince" type="String" />
+
+	<aura:handler name="init" value="{!this}" action="{!c.initialize}" />
+
+<div class="slds-media slds-comment slds-hint-parent">
+  <div class="slds-media__figure">
+    <div class="slds-avatar slds-avatar--circle slds-avatar--small">
+      <a href="#void" title="{!v.tweet.user.name}">
+        <img src="{!v.tweet.user.profile_image_url_https}" alt="{!v.tweet.user.name}" />
+      </a>
+    </div>
+  </div>
+  <div class="slds-media__body">
+    <div class="slds-grid slds-grid--align-spread slds-has-flexi-truncate">
+      <p class="slds-truncate"><a href="#void" title="{!v.tweet.user.name}">{!v.tweet.user.name}</a> -
+        <span class="slds-text-body--small">{!v.timesince} Ago</span>
+      </p>
+    </div>
+    <div class="slds-comment__content slds-text-longform">
+    	<p>
+	    	<aura:iteration items="{!v.body}" var="segment">
+			    <aura:if isTrue="{!segment.type == 'text'}">
+			        {!segment.value}
+			        <aura:set attribute="else">
+			            <a href="#void" title="Jason Rodgers">{!segment.value}</a>
+			        </aura:set>
+			    </aura:if>
+	    	</aura:iteration>
+      	</p>
+    </div>
+    <ul class="slds-list--horizontal slds-has-dividers--right slds-text-body--small">
+      <li class="slds-list__item"><a href="#void" title="Like this item">Like</a></li>
+      <li class="slds-list__item">{!v.tweet.favorite_count} Likes</li>
+    </ul>
+  </div>
+</div>
+</aura:component>

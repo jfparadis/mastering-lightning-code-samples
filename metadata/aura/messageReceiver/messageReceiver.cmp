@@ -1,0 +1,11 @@
+<aura:component >
+
+    <aura:attribute name="text" type="String" default="None"/>
+
+    <aura:handler event="c:messageEvt" action="{!c.answerMessage}"/>
+
+    <div>
+        Message Received: {!v.text}
+    </div>
+
+</aura:component>

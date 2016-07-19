@@ -1,0 +1,6 @@
+<aura:component extensible="true" controller="parentController">
+
+    <p>Parent: {!m.text}</p>
+    {!v.body}
+
+</aura:component>

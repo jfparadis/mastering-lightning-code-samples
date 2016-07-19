@@ -1,0 +1,5 @@
+<aura:component extends="c:parent">
+
+    <p>Child: {!m.text}</p>
+
+</aura:component>

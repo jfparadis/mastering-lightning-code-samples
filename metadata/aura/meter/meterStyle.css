@@ -1,0 +1,27 @@
+.THIS {
+    box-sizing: border-box;
+    display: inline-block;
+    height: 1em;
+    width: 5em;
+    vertical-align: -0.2em;
+}
+
+.THIS .meter-inner-element {
+    -webkit-appearance: inherit;
+    box-sizing: inherit;
+    height: 100%;
+    width: 100%;
+}
+
+.THIS .meter-bar {
+    height: 100%;
+    width: 100%;
+    box-sizing: border-box;
+    background: -webkit-gradient(linear, left top, left bottom, from(#ddd), to(#ddd), color-stop(0.20, #eee), color-stop(0.45, #ccc), color-stop(0.55, #ccc));
+}
+
+.THIS .meter-optimum-value {
+    height: 100%;
+    box-sizing: border-box;
+    background: linear-gradient(rgb(119, 170, 221), rgb(170, 204, 238) 20%, rgb(51, 119, 170) 45%, rgb(51, 119, 170) 55%, rgb(119, 170, 221));
+}

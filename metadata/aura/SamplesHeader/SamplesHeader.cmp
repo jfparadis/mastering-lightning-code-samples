@@ -1,0 +1,18 @@
+<aura:component >
+	<aura:attribute name="id" type="integer"/>
+	<aura:attribute name="section" type="String"/>
+	<aura:attribute name="title" type="String"/>
+
+	<div class="slds-page-header" role="banner">
+        <nav class="slds-m-bottom--xx-small" role="navigation" aria-label="Breadcrumbs">
+        	<ol class="slds-breadcrumb slds-list--horizontal">
+                <li class="slds-list__item slds-text-heading--label"><a href="basics.app">Lightning Basics</a></li>
+                <aura:if isTrue="{!v.section > ''}">
+	 				<li class="slds-list__item slds-text-heading--label"><a href="{! 'basics.app?id=' + v.id}">{!v.section}</a></li>
+                </aura:if>
+    		</ol>
+  		</nav>
+        <h1 class="slds-page-header__title slds-truncate" title="{!v.title}">{!v.title}</h1>
+	</div>
+
+</aura:component>

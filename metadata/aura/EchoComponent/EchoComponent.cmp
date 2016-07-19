@@ -1,0 +1,11 @@
+<aura:component >
+
+	<aura:attribute name="echo" type="String" required="true" />
+
+	<li class="slds-lookup__item">
+		<div class="{!'slds-page-header' + if(v.echo.listener == 2 , ' slds-theme--info', ' slds-theme--alt-inverse')}">
+			{!v.echo.text} : {!v.echo.state}
+		</div>
+	</li>
+
+</aura:component>

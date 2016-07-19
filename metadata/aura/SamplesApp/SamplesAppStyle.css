@@ -1,0 +1,9 @@
+.THIS.container {
+	width: 100%;
+	padding: 10px 0px;
+	margin: 40px 40px 40px 40px;
+}
+
+.THIS.container > label {
+	display: block;
+}

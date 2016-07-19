@@ -1,0 +1,53 @@
+<aura:component >
+
+  <div class="slds-modal slds-fade-in-open" aria-hidden="false" role="dialog">
+    <div class="slds-modal__container">
+      <div class="slds-modal__header">
+        <h2 class="slds-text-heading--medium">Contact Form</h2>
+      </div>
+      <div class="slds-modal__content slds-p-around--medium">
+	
+      <div class="slds-form--stacked">
+
+        <div class="slds-form-element">
+          <label class="slds-form-element__label" for="name">Your Name :</label>
+          <div class="slds-form-element__control">
+            <input id="name" name="name" class="slds-input" type="text" placeholder="Your Full Name" />
+          </div>
+        </div>
+
+        <div class="slds-form-element">
+          <label class="slds-form-element__label" for="email">Your Email :</label>
+          <div class="slds-form-element__control">
+            <input id="email" name="email" class="slds-input" type="email" placeholder="Valid Email Address" />
+          </div>
+        </div>
+
+        <div class="slds-form-element">
+          <label class="slds-form-element__label" for="message">Message :</label>
+          <div class="slds-form-element__control">
+            <textarea id="message" name="message" class="slds-textarea" placeholder="Your Message to Us" />
+          </div>
+        </div>
+
+        <div class="slds-form-element">
+          <label class="slds-form-element__label" for="subject">Subject :</label>
+          <div class="slds-form-element__control">
+            <div class="slds-select_container">
+              <select id="subject" name="subject" class="slds-select">
+                <option>Job Inquiry</option>
+                <option>General Question</option>
+              </select>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      </div>          
+      <div class="slds-modal__footer">
+        <button class="slds-button slds-button--neutral slds-button--brand">Send</button>
+      </div>
+    </div>
+  </div>
+</aura:component>

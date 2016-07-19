@@ -1,0 +1,11 @@
+<aura:component >
+
+    <article>
+        {!v.body}
+    </article>
+
+    <article>
+        {!v.body}
+    </article>
+
+</aura:component>

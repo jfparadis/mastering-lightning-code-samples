@@ -1,0 +1,13 @@
+<aura:component >
+
+    <aura:attribute name="value" type="Decimal"/>
+
+    <div>
+        <div class="meter-inner-element">
+            <div class="meter-bar">
+                <div class="meter-optimum-value" style="{!'width:' + (v.value * 100) + '%'}"/>
+            </div>
+        </div>
+    </div>
+
+</aura:component>

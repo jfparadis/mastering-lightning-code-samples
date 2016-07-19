@@ -1,0 +1,6 @@
+<aura:component >
+    <header>
+        Lightning Basics: Styling components
+        <span>{!v.body}</span>
+    </header>
+</aura:component>

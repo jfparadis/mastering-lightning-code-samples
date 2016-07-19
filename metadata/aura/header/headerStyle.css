@@ -1,0 +1,11 @@
+.THIS {
+    font-family: Helvetica, sans-serif;
+    color: #FFF;
+    font-size: 1.3em;
+    text-align: center;
+}
+
+.THIS span {
+    display: block;
+    font-size: 1.5em;
+}

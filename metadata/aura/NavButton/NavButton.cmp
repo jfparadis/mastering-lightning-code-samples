@@ -1,0 +1,12 @@
+<aura:component >
+
+	<aura:attribute name="label" type="String" required="true" default="Next" />
+	<aura:attribute name="floatdir" type="String" default="right" />
+	<aura:attribute name="target" type="String"/>
+	<aura:attribute name="onclick" type="Aura.Action"/>
+
+	<a href="{!v.target}" onclick="{!v.onclick}" class="{!concat('slds-button slds-button--brand slds-float--', v.floatdir)}">
+        {!v.label}
+    </a>
+
+</aura:component>

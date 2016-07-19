@@ -1,0 +1,8 @@
+<aura:component >
+
+	<div>
+	    <ui:button aura:id="1" label="Say Hello" press="{!c.sendMessage}"/>
+		<ui:button aura:id="2" label="Say Goodbye" press="{!c.sendMessage}"/>
+	</div>
+
+</aura:component>

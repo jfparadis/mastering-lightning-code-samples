@@ -1,0 +1,27 @@
+/* styling crosses component boundaries */
+.THIS article {
+    margin: 5px;
+    border: 1px solid grey;
+    padding: 5px;
+}
+
+/* no CSS file means .THIS not added */
+.THIS .cWidget,
+.THIS .cWidgetList {
+    font-weight: bold;
+}
+
+/* no attribute “class” by default on custom components */
+.THIS .first {
+    color: #C5CE5F;
+}
+
+/*multiple top elements means multiple .THIS added*/
+.THIS article.cWidgetList {
+    font-style: italic;
+}
+
+/* removing top element might change rules */
+.THIS.cWidgetList {
+    color: #CD5C5C;
+}

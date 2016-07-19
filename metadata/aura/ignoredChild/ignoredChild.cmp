@@ -1,0 +1,7 @@
+<aura:component extends="c:ignoringParent">
+
+    <p>
+        {!v.body}
+    </p>
+
+</aura:component>

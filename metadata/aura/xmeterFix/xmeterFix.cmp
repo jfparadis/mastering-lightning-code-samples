@@ -1,0 +1,16 @@
+<aura:component >
+
+    <aura:attribute name="value" type="Decimal"/>
+    <aura:attribute name="native" type="Boolean"/>
+
+    <div>
+	    <aura:if isTrue="{!v.native}">
+	        <meter value="{!v.value}">{!(v.value * 100) + '%'}</meter>
+
+	        <aura:set attribute="else">
+	            <c:meter value="{!v.value}">{!(v.value * 100) + '%'}</c:meter>
+	        </aura:set>
+	    </aura:if>
+    </div>
+
+</aura:component>

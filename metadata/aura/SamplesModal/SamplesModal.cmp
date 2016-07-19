@@ -1,0 +1,22 @@
+<aura:component >
+    <aura:attribute name="title" type="String"/>
+    <aura:attribute name="url" type="String"/>
+
+    <aura:if isTrue="{!v.url > ''}">
+        <div class="slds-modal slds-fade-in-open" aria-hidden="false" role="dialog">
+          <div class="slds-modal__container">
+            <div class="slds-modal__header">
+              <h2 class="slds-text-heading--medium">{!v.title}</h2>
+            </div>
+            <div class="slds-modal__content slds-p-around--medium">
+                <iframe src="{!v.url}"></iframe>
+            </div>
+            <div class="slds-modal__footer">
+              <button class="slds-button slds-button--neutral" onclick="{!c.handleOpen}">View</button>
+              <button class="slds-button slds-button--neutral slds-button--brand" onclick="{!c.handleDismiss}">Close</button>
+            </div>
+          </div>
+        </div>
+        <div class="slds-backdrop slds-backdrop--open"/>	
+    </aura:if>
+</aura:component>

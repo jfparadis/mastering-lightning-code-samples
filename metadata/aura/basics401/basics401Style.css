@@ -1,0 +1,37 @@
+.THIS.container {
+    width: 90%;
+    max-width: 440px;
+    padding: 10px 0px;
+    margin: 40px 40px 40px 40px;
+}
+
+.THIS .container {	width: 100%;
+	padding: 0px 0px;
+	margin-left: 10px;
+}
+
+.THIS .center {
+	margin: 0px auto;
+}
+
+/*.THIS article {
+    margin-left: 10px;
+    border-right-color: black;
+    border-right-width: thin;
+    border-right-style: solid;
+}*/
+
+.THIS h1, .THIS h2 {
+    margin-left: 10px;
+}
+
+.THIS h1 {
+    font-weight: bold;
+    margin-left: 10px;
+}
+
+.THIS .content {
+	max-width: 768px;
+	font-size: 12px;
+	color: #3c3d3e;
+}

@@ -1,0 +1,5 @@
+<aura:component extensible="true">
+
+    <h1>Title</h1>
+
+</aura:component>

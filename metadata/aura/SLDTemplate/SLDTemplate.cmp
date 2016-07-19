@@ -1,0 +1,3 @@
+<aura:component isTemplate="true" extends="aura:template" >
+    <link href="/resource/SLDS104/SLDS104/assets/styles/salesforce-lightning-design-system.css" rel="stylesheet" type="text/css" />
+</aura:component>
